@@ -43,7 +43,7 @@ async function gerarImagem() {
   adicionarMensagem("Você", "Gerando imagem: " + descricao);
 
   try {
-    const res = await fetch("http://localhost:3000/imagem", {
+    const res = await fetch("https://chatdjc-sever.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt: descricao })
